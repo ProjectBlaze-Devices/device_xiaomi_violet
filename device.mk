@@ -25,6 +25,9 @@ $(call inherit-product, vendor/xiaomi/violet/violet-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+PRODUCT_PACKAGES += \
+    NotchBarKiller
+
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Product shipping API
