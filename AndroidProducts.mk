@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_violet.mk
+    $(LOCAL_DIR)/blaze_violet.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_violet-eng \
-    lineage_violet-userdebug \
-    lineage_violet-user
+    blaze_violet-ap2a-eng \
+    blaze_violet-ap2a-userdebug \
+    blaze_violet-ap2a-user

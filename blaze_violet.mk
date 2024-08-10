@@ -8,26 +8,25 @@
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit some common EvolutionX stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Blaze  stuff.
+$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
 # Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Extra Stuffs
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USES_MINI_GAPPS := true
-TARGET_ENABLE_BLUR := false
-EVO_BUILD_TYPE := Official
-
 # MiuiCamera
 $(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
 
-# Charging Animation
-TARGET_INCLUDE_PIXEL_CHARGER := true
+# Blaze Flags
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USES_PICO_GAPPS := true
+BLAZE_BUILD_TYPE := OFFICIAL
+BLAZE_MAINTAINER := Aryan
+WITH_GAPPS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_violet
+PRODUCT_NAME := blaze_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
